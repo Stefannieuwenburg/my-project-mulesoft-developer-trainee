@@ -1,14 +1,15 @@
 import * as React from "react";
-import { Button } from "@mui/material";
+import "../App.css";
 
-import "./App.css";
+import MyButton from "./StyleButton";
+
 
 const Home = () => {
     return (
         <>
             <div className="App">
                 <p>follow me on my journey to mulesoft</p>
-                <Button variant="contained">Hello Mulesoft</Button>
+                <MyButton variant="contained">Hello Mulesoft</MyButton>
             </div>
         </>
     );

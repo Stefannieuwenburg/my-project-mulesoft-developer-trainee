@@ -1,8 +1,9 @@
 import * as React from "react";
-import Home from "./components/Home"
-import Album from "./components/Album"
-import NavToolBar from "./components/NavToolBar"
-import Footer from "./components/Footer"
+import NavToolBar from "./components/NavToolBar";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
+import Album from "./components/Album";
+
 import "./App.css";
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <>
       <NavToolBar/>
       <Home />
-      <Album />
+      <Album/>
       <Footer/>
     </>
   )
