@@ -13,10 +13,8 @@ import {
    
 } from "@material-ui/core";
 import { Stack } from "@mui/material";
-
-
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
+import MulesoftImage from '../image/mulesoft-logo.png'
 
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -26,7 +24,6 @@ const theme = createTheme();
 export default function About() {
     return (
         <ThemeProvider theme={theme}>
-            
             <main>
                 {/* Hero unit */}
                 <Box
@@ -44,7 +41,7 @@ export default function About() {
                             color="text.primary"
                             gutterBottom
                         >
-                            Album 
+                            Album
                         </Typography>
                         <Typography
                             variant="h5"
@@ -53,15 +50,13 @@ export default function About() {
                             paragraph
                         >
                             Something short and leading about the collection
-                           
                         </Typography>
                         <Stack
                             sx={{ pt: 4 }}
                             direction="row"
                             spacing={2}
                             justifyContent="center"
-                        >
-                        </Stack>
+                        ></Stack>
                     </Container>
                 </Box>
                 <Container sx={{ py: 8 }} maxWidth="md">
@@ -82,8 +77,8 @@ export default function About() {
                                             // 16:9
                                             pt: "56.25%",
                                         }}
-                                        image="https://source.unsplash.com/random"
-                                        alt="random"
+                                        image={MulesoftImage}
+                                        alt="mulesoft"
                                     />
                                     <CardContent sx={{ flexGrow: 1 }}>
                                         <Typography
@@ -95,7 +90,6 @@ export default function About() {
                                         </Typography>
                                         <Typography>
                                             This is a media card. You can use
-                                           
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
@@ -108,7 +102,6 @@ export default function About() {
                     </Grid>
                 </Container>
             </main>
-           
         </ThemeProvider>
     );
 }

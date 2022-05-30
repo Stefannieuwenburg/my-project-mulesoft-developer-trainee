@@ -4,13 +4,16 @@ import { Box, Typography, Link } from "@material-ui/core";
 function Copyright() {
     return (
         <Typography
+            style={{ color: "white" }}
             variant="body2"
-            color="text.secondary"
             align="center"
             className="footer"
         >
             {"Copyright © "}
-            <Link color="inherit" href="https://mui.com/">
+            <Link
+                style={{ color: "white" }}
+                href="https://mulesoft.com"
+            >
                 Your Website
             </Link>{" "}
             {new Date().getFullYear()}
@@ -30,7 +33,7 @@ const Footer = () => {
                 <Typography
                     variant="subtitle1"
                     align="center"
-                    color="text.secondary"
+                    style={{ color: "white" }}
                     component="p"
                 >
                     from stefan Nieuwenburg
